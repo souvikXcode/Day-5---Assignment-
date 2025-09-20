@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    float basic, hra, ta, da, gross;
+    printf("Enter Basic Salary: ");
+    scanf("%f", &basic);
+    switch(1) {
+        case 1:
+            hra = 0.20 * basic;  
+            ta  = 0.10 * basic;  
+            da  = 0.05 * basic;  
+
+            gross = basic + hra + ta + da;
+            printf("\n--- Salary Breakdown ---\n");
+            printf("Basic Salary : %.2f\n", basic);
+            printf("HRA (20%%)    : %.2f\n", hra);
+            printf("TA (10%%)     : %.2f\n", ta);
+            printf("DA (5%%)      : %.2f\n", da);
+            printf("---------------------------\n");
+            printf("Gross Salary : %.2f\n", gross);
+            break;
+    }
+
+    return 0;
+}
